@@ -47,10 +47,11 @@ class DoublyLinkedList:
         # Write your code here.
 		if nodeToInsert == self.head and nodeToInsert == self.tail:
 			return
-		self.remove(nodeToInsert)
+		self.remove(nodeToInsert) 
 		nodeToInsert.prev = node
 		nodeToInsert.next = node.next
 		if node.next is None:
+            #sda
 			self.tail = nodeToInsert
 		else:
 			node.next.prev = nodeToInsert
