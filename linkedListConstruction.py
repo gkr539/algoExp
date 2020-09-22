@@ -51,7 +51,6 @@ class DoublyLinkedList:
 		nodeToInsert.prev = node
 		nodeToInsert.next = node.next
 		if node.next is None:
-            #sda
 			self.tail = nodeToInsert
 		else:
 			node.next.prev = nodeToInsert
